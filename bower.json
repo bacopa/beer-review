@@ -1,0 +1,28 @@
+{
+  "name": "turn-based-game",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "alicia <alicia.fulk@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-ui-router": "ui-router#^0.3.0",
+    "bootswatch-dist": "superhero",
+    "jquery": "^2.2.3",
+    "font-awesome": "fontawesome#^4.6.3"
+  },
+  "resolutions": {
+    "angular": "1.5.5"
+  }
+}
