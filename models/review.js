@@ -5,7 +5,7 @@ var User = mongoose.model("User");
 var reviewSchema = new mongoose.Schema({
 
 	review: { type: String, required: true },
-	book: { type: String, required: true },
+	beer: { type: String, required: true },
 	_user: { type: Schema.Types.ObjectId, ref: 'User' }
 
 });
@@ -26,13 +26,13 @@ reviewSchema.statics.createReview = function (obj, cb) {
 
 	var userId = obj.userId;
 	var review = obj.review;
-	var book = obj.book;
+	var beer = obj.beer;
 
 	User.findOne({_id: userId}, function (err, user) {
 
 		var newReview = new Review({
 			review: review,
-			book: book,
+			beer: beer,
 			_user: userId
 		});
 
@@ -41,7 +41,7 @@ reviewSchema.statics.createReview = function (obj, cb) {
 		newReview.save(function (err) {
 			user.save(function (err) {
 				if(err){ 
-					console.log("Couldn't save book review =(");
+					console.log("Couldn't save beer review =(");
 					cb(err); 
 				}
 				cb(null, user);
