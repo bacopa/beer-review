@@ -2,5 +2,5 @@
 
 
 <ul>
-	<li ng-repeat="obj in bookReviews" ui-sref="detail({ id: obj._id, index: $index })"> {{ obj.book}} {{ obj.reviews.length }}Reviews</li>
+	<li ng-repeat="obj in reviews" ui-sref="detail({ id: obj._id, index: $index })"> {{ obj.name}} {{ obj.reviews.length }}Reviews</li>
 </ul>

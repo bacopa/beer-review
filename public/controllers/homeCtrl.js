@@ -1,13 +1,13 @@
-var app = angular.module("bookReviewApp");
+var app = angular.module("ReviewApp");
 
-app.controller("homeCtrl", function ($scope, userServices, bookReviewServices) {
+app.controller("homeCtrl", function ($scope, userService, reviewService) {
 
 	
-	bookReviewServices.getAllBookReviews(function (data) {
-		$scope.bookReviews = data;
+	reviewService.getAllReviews(function (data) {
+		$scope.reviews = data;
 	});
 
 
-	console.log("homeCtrl");
+	
 
 });

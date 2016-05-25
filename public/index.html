@@ -16,10 +16,12 @@
 	<!-- controllers, services, module -->
 	<script src="/module.js"></script>
 	<script src="/controllers/userCtrl.js"></script>
+	<script src="/controllers/homeCtrl.js"></script>
 	<script src="/services/userService.js"></script>
+	<script src="/services/reviewService.js"></script>
 
 </head>
-<body>
+<body ng-app="ReviewApp" ng-controller="homeCtrl">
 	<nav class="navbar navbar-default">
 	    <div class="container-fluid">
 	        <div class="navbar-header">

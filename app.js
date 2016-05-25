@@ -45,14 +45,4 @@ server.listen(PORT, err => {
   console.log(err || `Server listening on port ${PORT}`);
 });
 
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/brewery/:breweryId/beers
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/?brewery/
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/beer/
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/beers/
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/beer/oeGSxs
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/?=type/beer
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/?type=beer
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/?type=beer/
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/?type=beer/beer/random
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/beer/random
-// http://api.brewerydb.com/v2/?key=31fc9f293dc04a19d57ca04dd0656dbc/?type=beer/random
+

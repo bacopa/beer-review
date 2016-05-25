@@ -1,4 +1,4 @@
-var app = angular.module("bookReviewApp", ['ui.router']);
+var app = angular.module("ReviewApp", ['ui.router']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 

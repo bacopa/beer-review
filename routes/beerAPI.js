@@ -25,18 +25,27 @@ router.get("/getbeer", function (req, res) {
 				console.log("brewery:", beerObject.style.category.name);
 				console.log("description:", beerObject.description);
 				console.log("abv:", beerObject.abv);
-				res.send(beerObject.data);
+				var beerObject2 = {
+					name: beerObject.name,
+					brewery: beerObject.brewery,
+					description: beerObject.description,
+					abv: beerObject.abv
+				};
+				console.log("(inside request) beerObject2:", beerObject2);
+				res.send(beerObject2);
+				
 			}
 	});
 
-//beerRequest is undefined 
+	 console.log()
 
 
 });
 
 
 module.exports = router;
-
+//doesn't do anything:
+//res.send(JSON.stringify(beerObject2), null, 4);
 //res.status(err ? 400 : 200).send(err || JSON.stringify(JSON.parse(body), null, 2));
 
 // get a random beer!!!!

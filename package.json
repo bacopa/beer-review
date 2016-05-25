@@ -1,7 +1,7 @@
 {
-  "name": "book-review",
+  "name": "beer-review",
   "version": "1.0.0",
-  "description": "simple crud with user login",
+  "description": "simple crud with user login plus breweryDB API",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

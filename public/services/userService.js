@@ -1,4 +1,4 @@
-var app = angular.module("bookReviewApp");
+var app = angular.module("ReviewApp");
 
 app.service("userService", function () {
 
