@@ -7,6 +7,12 @@ app.service("reviewService", function ($http) {
 		$http.get("/reviews").success(function (data) {
 			cb(data);
 		});
-	}
+	};
+
+	this.getRandomBeer = function (cb) {
+		$http.get("/getbeer").success(function (data) {
+			cb(data);
+		});
+	};
 
 })

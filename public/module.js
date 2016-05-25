@@ -18,6 +18,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 		templateUrl: "/partials/register.html",
 		controller: "registerCtrl"
 	})
+	.state("login", {
+		url: "/login",
+		templateUrl: "/partials/login.html",
+		controller: "userCtrl"
+	})
 	$urlRouterProvider.otherwise("/");
 
 
